@@ -1,0 +1,29 @@
+[0m13:32:01.243892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC7FD4DA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC7D7BB890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC01FC7ED0>]}
+
+
+============================== 13:32:01.250099 | 6df918d6-90ad-4cee-bc26-77de2679b43e ==============================
+[0m13:32:01.250099 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:32:01.251395 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\belho\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init sportsdw', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:32:01.285302 [debug] [MainThread]: Starter project path: C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m13:32:01.306139 [info ] [MainThread]: 
+Your new dbt project "sportsdw" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:32:01.307067 [info ] [MainThread]: Setting up your profile.
+[0m13:32:08.899897 [info ] [MainThread]: Profile sportsdw written to C:\Users\belho\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m13:32:08.901369 [debug] [MainThread]: Command `dbt init` succeeded at 13:32:08.901202 after 7.84 seconds
+[0m13:32:08.901764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC020C1F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0128D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC020919D0>]}
+[0m13:32:08.903355 [debug] [MainThread]: Flushing usage events
+[0m13:32:09.739349 [debug] [MainThread]: An error was encountered while trying to flush usage events

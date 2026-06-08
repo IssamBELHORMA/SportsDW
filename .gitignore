@@ -1,4 +1,23 @@
-notebooks.ipynb
+# Database files
+warehouse.ddb
+warehouse.ddb.wal
+
+# Raw data - too large for git
+data/raw/
+
+# dbt
+dbt/sportsdw/target/
+dbt/sportsdw/logs/
+dbt/sportsdw/.user.yml
+
+# Python
 __pycache__/
-*.pyc
-*.dbb
+*.py[cod]
+.env
+venv/
+.venv/
+notebooks.ipynb 
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,52 @@
+[0m13:31:11.564979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841FEE9A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841CA2B890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284210C7ED0>]}
+
+
+============================== 13:31:11.580714 | e69c2477-d5c6-4e18-b7c9-7973a2e4f07d ==============================
+[0m13:31:11.580714 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:31:11.582584 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\belho\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init sportsdw', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:31:11.669626 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\belho\.dbt
+[0m13:31:11.680332 [debug] [MainThread]: Starter project path: C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m13:31:11.769056 [info ] [MainThread]: 
+Your new dbt project "sportsdw" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:31:11.770363 [info ] [MainThread]: Setting up your profile.
+[0m13:31:29.034474 [error] [MainThread]: Encountered an error:
+
+[0m13:31:29.068129 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 488, in init
+    results = task.run()
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\belho\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:31:29.069935 [debug] [MainThread]: Command `dbt init` failed at 13:31:29.069761 after 17.78 seconds
+[0m13:31:29.070352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002842218C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028422121370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028420F7ACF0>]}
+[0m13:31:29.070853 [debug] [MainThread]: Flushing usage events
+[0m13:31:29.960253 [debug] [MainThread]: An error was encountered while trying to flush usage events
