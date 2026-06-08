@@ -7,8 +7,9 @@ data/raw/
 
 # dbt
 dbt/sportsdw/target/
-dbt/sportsdw/logs/
 dbt/sportsdw/.user.yml
+dbt/logs/
+dbt/sportsdw/logs/
 
 # Python
 __pycache__/
