@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: fact_matches
+    description: "One row per match. Grain is one La Liga match."
+    columns:
+      - name: match_id
+        description: "Surrogate key"
+        tests:
+          - unique
+          - not_null
+
+      - name: home_goals
+        tests:
+          - not_null
+
+      - name: result
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['H', 'A', 'D']
+
+  - name: dim_team
+    columns:
+      - name: team_id
+        tests:
+          - unique
+          - not_null
+      - name: team_name
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_season
+    columns:
+      - name: season_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    columns:
+      - name: date_id
+        tests:
+          - unique
+          - not_null
