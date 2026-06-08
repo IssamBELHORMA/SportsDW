@@ -1,5 +1,4 @@
-data/
-venv
+notebooks.ipynb
 __pycache__/
 *.pyc
 *.dbb
